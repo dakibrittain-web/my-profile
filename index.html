@@ -4,20 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daki De Alwis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+  rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 
 </head>
 <body>
-    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">Daki De Alwis</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#hero">Home</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#contact">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-section">
+        <div class="container text-center">
         <p>👋🏾 Hi I am</p>
         <h1>Daki De Alwis</h1>
         <h2>Front-end developer & textile artist, based in the Netherlands</h2>
         <div class="buttons">
             <a href="about.html#contact" class="button button-primary">Contact Me</a>
             <a href="about.html" class="button button-secondary">About Me</a>
-            
         </div>
     </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container-lg">
+
+            <div class="row align-items-center project-row">
+                <div class="col-md-6">
+                        <img src="weather-app.png" alt="Weather App Screenshot" class="project-image" />
+                    </div>
+                    <div class="col-md-6">
+                        <h3>🌤️ Weather App</h3>
+                        <p>A live weather application showing current conditions and a 5-day forecast for any city int he world.</p>
+                        <a href="elegant-squirrel-b3b1a8.netlify.app" target="_blank" class="button button-primary">Launch App</a> 
+                    </div>
+                </div>
+
+            <div class="row align-items-center project-row">
+                <div class="col-md-6 order-md-2">
+                        <img src="world-clock.png" alt="World Clock Screenshot" class="project-image" />
+                </div>
+                <div class="col-md-6 order-md-1">
+                        <h3>🕝 World Clock</h3>
+                        <p>A live world clock showing real-time in Amsterdam and Colombo, with a dropdown to add a third city.</p>
+                        <a href="dakiworldclock.netlify.app" target="_blank" class="button button-primary">Launch App</a>
+                    </div>
+                </div>
+
+                <div class="row align-items-center project-row">
+                    <div class="col-md-6">
+                        <img src="recipe-generator.png" alt="Recipe Generator Screenshot" class="project-image" />
+                    </div>
+                    <div class="col-md-6">  
+                        <h3>🍳 Recipe Generator</h3>
+                        <p>An AI-powered recipe generator that creates recipes based on ingredients you have at home.</p>
+                        <a href="dakis-ai-recipe-generator.netlify.app" target="_blank" class="button button-primary">Launch App</a>
+                    </div>
+                </div>
+
+        </div>
+    </section>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
 </body>
 </html>
