@@ -175,3 +175,25 @@ h2 {
   text-align: center;
   display: block;
 }
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .about-container {
+    padding: 24px 16px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
