@@ -61,7 +61,6 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  position: relative;
   background-image: url("hero-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -204,6 +203,25 @@ h2 {
   width: 100%;
   border-radius: 4px;
   margin-bottom: 16px;
+}
+
+.launch-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1px solid #364767;
+  border-radius: 4px;
+  color: #364767;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.launch-btn:hover {
+  background-color: #364767;
+  color: white;
 }
 
 .about-container {
