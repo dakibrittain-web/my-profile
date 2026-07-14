@@ -84,6 +84,10 @@ a {
   max-width: 800px;
 }
 
+.hero-content h1 {
+  color: #ffffff;
+}
+
 .hero-eyebrow {
   font-family: var(--font-body);
   font-size: 0.8em;
@@ -100,7 +104,6 @@ h1 {
   font-weight: 300;
   line-height: 1;
   letter-spacing: 0.02em;
-  color: #ffffff;
   margin-bottom: 24px;
 }
 
