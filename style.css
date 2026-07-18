@@ -359,6 +359,60 @@ h2 {
   opacity: 1;
 }
 
+.contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.contact-container p {
+  font-size: 1rem;
+  line-height: 1.8;
+  opacity: 0.75;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  color: var(--primary-color);
+  position: relative;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.contact-links a::before {
+  content: "";
+  position: absolute;
+  inset: -8px -14px;
+  background: linear-gradient(
+    69.8deg,
+    rgba(25, 49, 108, 0.422) 2.8%,
+    rgba(1, 178, 201, 0.322) 97.8%
+  );
+  border-radius: 999px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.contact-links a:hover::before {
+  opacity: 1;
+}
+
+.contact-links a:hover {
+  border-color: var(--primary-color);
+}
+
 @media (max-width: 768px) {
   .cards {
     flex-direction: column;
