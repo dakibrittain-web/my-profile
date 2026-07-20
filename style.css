@@ -272,6 +272,14 @@ h2 {
   gap: 16px;
   font-size: 0.95em;
   font-weight: 300;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(54, 71, 103, 0.12);
 }
 
 #contact {
@@ -457,6 +465,27 @@ h2 {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--primary-color);
+}
+
+.site-footer {
+  border-top: 1px solid rgba(54, 71, 103, 0.15);
+  padding: 48px 20px 32px;
+  text-align: center;
+}
+
+.footer-brand {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+
+.footer-credit {
+  margin-top: 24px;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
+  font-weight: 300;
 }
 
 @media (max-width: 768px) {
